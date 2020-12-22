@@ -94,8 +94,10 @@ $button-height: 35px;
 $button-border-radius: 20px;
 
 // Layout
-$layout-post-single-width: 945px;
-$layout-post-width: $layout-post-single-width - 245px;
+$layout-post-single-width: 1070px;
+$layout-post-width: 1070px - 150px;
+// $layout-post-single-width: 945px;
+// $layout-post-width: $layout-post-single-width - 245px;
 
 $layout-width: 1070px;
 // Should match MOBILE_WIDTH_THRESHOLD in PlatformContext
