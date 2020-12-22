@@ -5,6 +5,7 @@
   max-width: $layout-post-single-width;
   padding: 0 15px;
   margin: 0 auto;
+  position: relative;
 
   &__title {
     font-size: $typographic-base-font-size * 2;
@@ -13,9 +14,17 @@
     margin-right: auto;
     font-weight: 600;
     text-align: left;
-    @include line-height(.5);
+    @include line-height(1.5);
     @include margin-top(1);
     @include margin-bottom(0)
+  }
+
+  &__highlight-first-char {
+    position: absolute;
+    opacity: .05;
+    font-size: $typographic-base-font-size * 10;
+    top: -90px;
+    left: 0;
   }
 
   &__body {
@@ -64,9 +73,9 @@
 
     &__title {
       font-size: $typographic-base-font-size * 3;
-      @include line-height(1);
+      @include line-height(2);
       @include margin-top(2.25);
-      @include margin-bottom(1.5)
+      @include margin-bottom(0)
     }
 
     &__body {
@@ -79,9 +88,6 @@
         @include line-height(1.125);
         @include margin-bottom(1.125)
       }
-
     }
-
   }
-
 }
