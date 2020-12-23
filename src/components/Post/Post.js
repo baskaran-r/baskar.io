@@ -18,8 +18,9 @@ type Props = {
 
 const Post = ({ post, author }) => {
   const { html } = post;
-  const { tagSlugs, slug } = post.fields;
+  const { tagSlugs } = post.fields;
   const { tags, title, date } = post.frontmatter;
+  const currentUrl = window.location.href || '';
 
   return (
     <div className={styles['post']}>
@@ -30,7 +31,7 @@ const Post = ({ post, author }) => {
       <div className={styles['post__footer']}>
         {tags && tagSlugs && <Tags tags={tags} tagSlugs={tagSlugs} />}
         <Author showBio showTwitter />
-        <Share url={slug} title={title} twitter={author.contacts.twitter} />
+        <Share url={currentUrl} title={title} twitter={author.contacts.twitter} />
       </div>
 
       {/* <div className={styles["post__comments"]}>
