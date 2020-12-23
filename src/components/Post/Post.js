@@ -30,7 +30,7 @@ const Post = ({ post, author }) => {
 
       <div className={styles['post__footer']}>
         {tags && tagSlugs && <Tags tags={tags} tagSlugs={tagSlugs} />}
-        <Author showBio showTwitter />
+        {/* <Author showBio showTwitter /> */}
         <Share url={currentUrl} title={title} twitter={author.contacts.twitter} />
       </div>
 
