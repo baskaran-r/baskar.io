@@ -1,6 +1,6 @@
 // @flow strict
 import React from 'react';
-import Author from '../Author';
+// import Author from '../Author';
 import Share from '../Share';
 // import Comments from './Comments';
 import Content from './Content';
@@ -16,7 +16,7 @@ type Props = {
   author: AuthorType
 };
 
-const Post = ({ post, author }) => {
+const Post = ({ post, author }: Props) => {
   const { html } = post;
   const { tagSlugs } = post.fields;
   const { tags, title, date } = post.frontmatter;
