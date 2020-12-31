@@ -21,7 +21,7 @@ type Props = {
 const Share = ({
   title, url, shareText, twitter
 }: Props) => {
-  const urlToShare = url || window.location.href || '';
+  const urlToShare = window.location.href || url || '';
 
   return (
     <div className={styles['share']}>
