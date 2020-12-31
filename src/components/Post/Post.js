@@ -7,6 +7,7 @@ import Content from './Content';
 import Tags from './Tags';
 import styles from './Post.module.scss';
 import type { Node } from '../../types';
+import { isBrowser } from '../../utils/common';
 
 type AuthorType = {
   contacts: { [string]: string },
@@ -20,7 +21,6 @@ const Post = ({ post, author }: Props) => {
   const { html } = post;
   const { tagSlugs } = post.fields;
   const { tags, title, date } = post.frontmatter;
-  const currentUrl = window.location.href || '';
 
   return (
     <div className={styles['post']}>
@@ -31,7 +31,7 @@ const Post = ({ post, author }: Props) => {
       <div className={styles['post__footer']}>
         {tags && tagSlugs && <Tags tags={tags} tagSlugs={tagSlugs} />}
         {/* <Author showBio showTwitter /> */}
-        <Share url={currentUrl} title={title} twitter={author.contacts.twitter} />
+        { isBrowser() && <Share title={title} twitter={author.contacts.twitter} /> }
       </div>
 
       {/* <div className={styles["post__comments"]}>
