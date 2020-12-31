@@ -12,9 +12,9 @@ exports[`Menu renders correctly 1`] = `
     >
       <a
         className="menu__list-item-link"
-        href="/#0/"
+        href="/test/1/"
       >
-        Item 0
+        Test label 1
       </a>
     </li>
     <li
@@ -22,9 +22,19 @@ exports[`Menu renders correctly 1`] = `
     >
       <a
         className="menu__list-item-link"
-        href="/#1/"
+        href="/test/2/"
       >
-        Item 1
+        Test label 2
+      </a>
+    </li>
+    <li
+      className="menu__list-item"
+    >
+      <a
+        className="menu__list-item-link"
+        href="/test/3/"
+      >
+        Test label 3
       </a>
     </li>
   </ul>

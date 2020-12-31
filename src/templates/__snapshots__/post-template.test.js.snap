@@ -1,104 +1,235 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`PostTemplate renders correctly 1`] = `
-<div
-  className="layout"
->
+Array [
   <div
-    className="post"
+    className="headroom-wrapper"
+    style={
+      Object {
+        "height": null,
+      }
+    }
   >
-    <a
-      className="post__home-button"
-      href="/"
-    >
-      All Articles
-    </a>
     <div
-      className="post__content"
+      className="headroom headroom--unfixed"
+      style={
+        Object {
+          "MsTransform": "translate3D(0, 0, 0)",
+          "WebkitTransform": "translate3D(0, 0, 0)",
+          "left": 0,
+          "position": "relative",
+          "right": 0,
+          "top": 0,
+          "transform": "translate3D(0, 0, 0)",
+          "zIndex": 1,
+        }
+      }
     >
       <div
-        className="content"
+        className="header"
       >
-        <h1
-          className="content__title"
-        >
-          test
-        </h1>
         <div
-          className="content__body"
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": "<p>test</p>",
-            }
-          }
-        />
+          className="desktop-only header__left"
+        >
+          <div
+            className="author"
+          >
+            <div
+              className="author__header"
+            >
+              <a
+                className="author__header-photo"
+                href="/"
+              >
+                <img
+                  alt="Test name"
+                  height={48}
+                  src="/test.jpg"
+                  width={48}
+                />
+              </a>
+              <div
+                className="author__header-right"
+              >
+                <h4
+                  className="author__header-right-name"
+                >
+                  <a
+                    className="author__header-right-name-link"
+                    href="/"
+                    rel="author"
+                  >
+                    Test name
+                  </a>
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="desktop-only header__right"
+        >
+          <nav
+            className="menu horizontal"
+          >
+            <ul
+              className="menu__list"
+            >
+              <li
+                className="menu__list-item"
+              >
+                <a
+                  className="menu__list-item-link"
+                  href="/test/1/"
+                >
+                  Test label 1
+                </a>
+              </li>
+              <li
+                className="menu__list-item"
+              >
+                <a
+                  className="menu__list-item-link"
+                  href="/test/2/"
+                >
+                  Test label 2
+                </a>
+              </li>
+              <li
+                className="menu__list-item"
+              >
+                <a
+                  className="menu__list-item-link"
+                  href="/test/3/"
+                >
+                  Test label 3
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </div>
+  </div>,
+  <div
+    className="layout"
+  >
     <div
-      className="post__footer"
+      className="post"
     >
       <div
-        className="meta"
+        className="post__content"
       >
-        <p
-          className="meta__date"
+        <div
+          className="content"
         >
-          Published 
-          Sep 1, 2016
-        </p>
+          <h1
+            className="content__title"
+          >
+            test
+          </h1>
+          <div
+            className="content__highlight-first-char"
+          >
+            T
+          </div>
+          <div
+            className="meta"
+          >
+            <p
+              className="meta__date"
+            >
+              Sep 1, 2016
+            </p>
+          </div>
+          <div
+            className="content__body"
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "<p>test</p>",
+              }
+            }
+          />
+        </div>
       </div>
       <div
-        className="tags"
+        className="post__footer"
       >
-        <ul
-          className="tags__list"
+        <div
+          className="tags"
         >
-          <li
-            className="tags__list-item"
+          <ul
+            className="tags__list"
           >
-            <a
-              className="tags__list-item-link"
-              href="/test_0"
+            <li
+              className="tags__list-item"
             >
-              test_0
-            </a>
-          </li>
-          <li
-            className="tags__list-item"
-          >
-            <a
-              className="tags__list-item-link"
-              href="/test_1"
+              <a
+                className="tags__list-item-link"
+                href="/test_0"
+              >
+                test_0
+              </a>
+            </li>
+            <li
+              className="tags__list-item"
             >
-              test_1
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div
-        className="author"
-      >
-        <p
-          className="author__bio"
+              <a
+                className="tags__list-item-link"
+                href="/test_1"
+              >
+                test_1
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div
+          className="share"
         >
-          Test bio
-          <a
-            className="author__bio-twitter"
-            href="https://www.twitter.com/#"
-            rel="noopener noreferrer"
-            target="_blank"
+          <h4
+            className="share-title"
           >
-            <strong>
-              Test name
-            </strong>
-             on Twitter
-          </a>
-        </p>
+            SHARE THIS POST
+          </h4>
+          <div
+            className="share-buttons"
+          >
+            <button
+              aria-label="facebook"
+              className="react-share__ShareButton facebook"
+              onClick={[Function]}
+              style={Object {}}
+            >
+              Facebook
+            </button>
+            <button
+              aria-label="twitter"
+              className="react-share__ShareButton twitter"
+              onClick={[Function]}
+              style={Object {}}
+            >
+              Twitter
+            </button>
+            <button
+              aria-label="linkedin"
+              className="react-share__ShareButton linkedin"
+              onClick={[Function]}
+              style={Object {}}
+            >
+              LinkedIn
+            </button>
+            <button
+              aria-label="reddit"
+              className="react-share__ShareButton reddit"
+              onClick={[Function]}
+              style={Object {}}
+            >
+              Reddit
+            </button>
+          </div>
+        </div>
       </div>
     </div>
-    <div
-      className="post__comments"
-    />
-  </div>
-</div>
+  </div>,
+]
 `;

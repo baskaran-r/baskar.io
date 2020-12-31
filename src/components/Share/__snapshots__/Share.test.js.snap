@@ -1,7 +1,49 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Share renders correctly 1`] = `
-<StaticQuery
-  render={[Function]}
-/>
+<div
+  className="share"
+>
+  <h4
+    className="share-title"
+  >
+    SHARE THIS POST
+  </h4>
+  <div
+    className="share-buttons"
+  >
+    <button
+      aria-label="facebook"
+      className="react-share__ShareButton facebook"
+      onClick={[Function]}
+      style={Object {}}
+    >
+      Facebook
+    </button>
+    <button
+      aria-label="twitter"
+      className="react-share__ShareButton twitter"
+      onClick={[Function]}
+      style={Object {}}
+    >
+      Twitter
+    </button>
+    <button
+      aria-label="linkedin"
+      className="react-share__ShareButton linkedin"
+      onClick={[Function]}
+      style={Object {}}
+    >
+      LinkedIn
+    </button>
+    <button
+      aria-label="reddit"
+      className="react-share__ShareButton reddit"
+      onClick={[Function]}
+      style={Object {}}
+    >
+      Reddit
+    </button>
+  </div>
+</div>
 `;

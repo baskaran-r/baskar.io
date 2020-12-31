@@ -1,21 +1,19 @@
 // @flow strict
 import React from 'react';
 import renderer from 'react-test-renderer';
+import { useStaticQuery, StaticQuery } from 'gatsby';
+import siteMetadata from '../../../jest/__fixtures__/site-metadata';
+import type { RenderCallback } from '../../types';
+
 import Menu from './Menu';
 
 describe('Menu', () => {
-  // const props = {
-  //   menu: [
-  //     {
-  //       label: 'Item 0',
-  //       path: '/#0/'
-  //     },
-  //     {
-  //       label: 'Item 1',
-  //       path: '/#1/'
-  //     }
-  //   ]
-  // };
+  beforeEach(() => {
+    StaticQuery.mockImplementationOnce(
+      ({ render }: RenderCallback) => render(siteMetadata),
+      useStaticQuery.mockReturnValue(siteMetadata)
+    );
+  });
 
   it('renders correctly', () => {
     const tree = renderer.create(<Menu />).toJSON();

@@ -4,12 +4,6 @@ exports[`Post renders correctly 1`] = `
 <div
   className="post"
 >
-  <a
-    className="post__home-button"
-    href="/"
-  >
-    All Articles
-  </a>
   <div
     className="post__content"
   >
@@ -21,6 +15,20 @@ exports[`Post renders correctly 1`] = `
       >
         test
       </h1>
+      <div
+        className="content__highlight-first-char"
+      >
+        T
+      </div>
+      <div
+        className="meta"
+      >
+        <p
+          className="meta__date"
+        >
+          Sep 1, 2016
+        </p>
+      </div>
       <div
         className="content__body"
         dangerouslySetInnerHTML={
@@ -34,16 +42,6 @@ exports[`Post renders correctly 1`] = `
   <div
     className="post__footer"
   >
-    <div
-      className="meta"
-    >
-      <p
-        className="meta__date"
-      >
-        Published 
-        Sep 1, 2016
-      </p>
-    </div>
     <div
       className="tags"
     >
@@ -73,28 +71,50 @@ exports[`Post renders correctly 1`] = `
       </ul>
     </div>
     <div
-      className="author"
+      className="share"
     >
-      <p
-        className="author__bio"
+      <h4
+        className="share-title"
       >
-        Test bio
-        <a
-          className="author__bio-twitter"
-          href="https://www.twitter.com/#"
-          rel="noopener noreferrer"
-          target="_blank"
+        SHARE THIS POST
+      </h4>
+      <div
+        className="share-buttons"
+      >
+        <button
+          aria-label="facebook"
+          className="react-share__ShareButton facebook"
+          onClick={[Function]}
+          style={Object {}}
         >
-          <strong>
-            Test name
-          </strong>
-           on Twitter
-        </a>
-      </p>
+          Facebook
+        </button>
+        <button
+          aria-label="twitter"
+          className="react-share__ShareButton twitter"
+          onClick={[Function]}
+          style={Object {}}
+        >
+          Twitter
+        </button>
+        <button
+          aria-label="linkedin"
+          className="react-share__ShareButton linkedin"
+          onClick={[Function]}
+          style={Object {}}
+        >
+          LinkedIn
+        </button>
+        <button
+          aria-label="reddit"
+          className="react-share__ShareButton reddit"
+          onClick={[Function]}
+          style={Object {}}
+        >
+          Reddit
+        </button>
+      </div>
     </div>
   </div>
-  <div
-    className="post__comments"
-  />
 </div>
 `;
