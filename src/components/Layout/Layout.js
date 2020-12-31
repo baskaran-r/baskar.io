@@ -4,6 +4,7 @@ import Helmet from 'react-helmet';
 import type { Node as ReactNode } from 'react';
 import { useSiteMetadata } from '../../hooks';
 import styles from './Layout.module.scss';
+import { getContactHref } from '../../utils';
 
 type Props = {
   children: ReactNode,
@@ -40,6 +41,7 @@ const Layout = ({
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={metaImageUrl} />
+        <link rel="me" href={getContactHref('twitter', author.contacts.twitter)}></link>
       </Helmet>
       {children}
     </div>

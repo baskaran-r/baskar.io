@@ -15,11 +15,10 @@ type Props = {
   +title: string,
   +url?: string,
   +shareText?: string,
-  +twitter?: string
 };
 
 const Share = ({
-  title, url, shareText, twitter
+  title, url, shareText
 }: Props) => {
   const urlToShare = window.location.href || url || '';
 
@@ -41,7 +40,6 @@ const Share = ({
           resetButtonStyle={false}
           url={urlToShare}
           title={title}
-          via={twitter}
         >
           Twitter
         </TwitterShareButton>
