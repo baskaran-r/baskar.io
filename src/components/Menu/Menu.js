@@ -5,10 +5,11 @@ import classNames from 'classnames/bind';
 import styles from './Menu.module.scss';
 import { useSiteMetadata } from '../../hooks';
 
-type Props = {
-  horizontal: Boolean,
-  noMargin: Boolean
-};
+type Props = {|
+  +horizontal?: boolean,
+  +noMargin?: boolean,
+  +bold?: boolean,
+|};
 
 const cx = classNames.bind(styles);
 

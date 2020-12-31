@@ -1,4 +1,4 @@
-// @flow
+// @flow strict
 
 const __DEV__ = typeof window !== 'undefined' && window.location && window.location.hostname === 'localhost';
 

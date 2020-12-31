@@ -1,6 +1,9 @@
 [ignore]
 .*/node_modules/*
+!.*/node_modules/react-share/*
+!.*/node_modules/react-headroom/*
 .*/public/*
+
 
 [libs]
 flow-typed
@@ -14,4 +17,4 @@ nonstrict-import
 unclear-type
 untyped-type-import
 unsafe-getters-setters
-sketchy-null
+; sketchy-null

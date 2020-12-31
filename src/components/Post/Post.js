@@ -9,8 +9,8 @@ import styles from './Post.module.scss';
 import type { Node } from '../../types';
 
 type AuthorType = {
-  contacts: any
-}
+  contacts: { [string]: string },
+};
 type Props = {
   post: Node,
   author: AuthorType

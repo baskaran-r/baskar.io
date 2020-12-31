@@ -6,7 +6,13 @@ import { getContactHref } from '../../utils';
 
 import styles from './Author.module.scss';
 
-export const Author = ({ showBio, showTwitter, small }) => {
+type Props = {|
+  +showBio?: string,
+  +showTwitter?: boolean,
+  +small?: boolean,
+|};
+
+export const Author = ({ showBio, showTwitter, small }: Props) => {
   const photoSizeWithOutBio = small ? 40 : 48;
   const photoSize = showBio ? 60 : photoSizeWithOutBio;
   const { author } = useSiteMetadata();

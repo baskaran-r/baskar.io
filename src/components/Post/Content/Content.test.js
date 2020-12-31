@@ -7,7 +7,8 @@ describe('Content', () => {
   it('renders correctly', () => {
     const props = {
       title: 'test',
-      body: '<p>test</p>'
+      body: '<p>test</p>',
+      date: '2020-12-22T03:30:13.175Z'
     };
 
     const tree = renderer.create(<Content {...props} />).toJSON();

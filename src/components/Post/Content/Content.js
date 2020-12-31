@@ -6,7 +6,7 @@ import Meta from '../Meta';
 type Props = {
   body: string,
   title: string,
-  date: String
+  date: string,
 };
 
 const Content = ({ body, title, date }: Props) => (
